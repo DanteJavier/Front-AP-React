@@ -108,8 +108,8 @@ const DetalleTarea = () => {
               <option value="PorrTestear">Por Testear</option>
               <option value="Completada">Completada</option>
             </select>
-            <button className="btn btn-primary" onClick={handleUpdateTask}>Actualizar Estado</button>
-            <button className="btn btn-danger" onClick={handleDeleteTask}>Eliminar Tarea</button>
+            <button className="btn btn-primary mx-1" onClick={handleUpdateTask}>Actualizar Estado</button>
+            <button className="btn btn-danger mx-1" onClick={handleDeleteTask}>Eliminar Tarea</button>
           </div>
 
         </div>
