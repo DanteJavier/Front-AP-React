@@ -49,7 +49,7 @@ const NavBar =() => {
           style={{ maxHeight: '100px' }}
           navbarScroll
         >
-          <Nav.Link href="/">Inicio</Nav.Link>
+          <Nav.Link onClick={()=>navigate('/')}>Inicio</Nav.Link>
           <NavDropdown title="Tareas" id="navbarScrollingDropdown">
             <NavDropdown.Item >Por Hacer</NavDropdown.Item>
             <NavDropdown.Item >En Produccion</NavDropdown.Item>
