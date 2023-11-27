@@ -24,7 +24,7 @@ const filteredTasks = selectedCategory
 : tasks;
 
   return (
-    <div className="conteiner mt-5">
+    <div className="conteiner mt-5 mx-1">
       <CategoriasSelector onSelectedCategory={setSelectedCategory}/>{/*Pasa la funcion para manejar la seleccion de categorias*/}
       <CategoriasTareas tasks={filteredTasks}/>{/*Pasa las tareas filtradas por categorias*/}
     </div>

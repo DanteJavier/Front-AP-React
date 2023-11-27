@@ -6,3 +6,7 @@ img{
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
+.carousel-caption {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Puedes ajustar estos valores según tus preferencias */
+    color: #fff; /* Asegúrate de que el color del texto sea visible en tus imágenes */
+  }

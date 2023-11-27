@@ -94,7 +94,7 @@ const DetalleTarea = () => {
           </div>
 
           <div className="col-12">
-            <h1 className="display-5 fw-bolder"> Titulo: {task.titulo}</h1>
+            <h1 className="display-5 fw-bolder">{task.titulo}</h1>
             <h3>Detalles de la tarea con ID: {task.id}</h3>
             <h5>Estado actual: {task.estado}</h5>
             <p className="lead">Tiempo: {task.tiempo} días</p>

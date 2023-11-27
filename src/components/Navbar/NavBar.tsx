@@ -1,10 +1,12 @@
-import { useState } from "react";
+
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { Task } from "../../types/Task";
 import TaskService from "../../services/TaskService";
 import { toast } from "react-toastify";
 import ModalAgregarTarea from "../ModalAgregarTarea/ModalAgregarTarrea";
+import { useState } from "react";
+
 
 
 const NavBar =() => {
@@ -14,6 +16,7 @@ const NavBar =() => {
 
   const handleShowModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
+
 
   //Agregar tarea
   const createTask = async (newTask: Task) => {
@@ -41,7 +44,7 @@ const NavBar =() => {
     <>    
     <Navbar expand="lg" className="bg-body-tertiary">
     <Container fluid>
-      <Navbar.Brand href="#">Desarrollo en Argentina</Navbar.Brand>
+      <Navbar.Brand onClick={()=>navigate('/')}>Desarrollo en Argentina</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav
@@ -52,7 +55,7 @@ const NavBar =() => {
           <Nav.Link onClick={()=>navigate('/')}>Inicio</Nav.Link>
           <NavDropdown title="Tareas" id="navbarScrollingDropdown">
             <NavDropdown.Item >Por Hacer</NavDropdown.Item>
-            <NavDropdown.Item >En Produccion</NavDropdown.Item>
+            <NavDropdown.Item >En Producción</NavDropdown.Item>
             <NavDropdown.Item >Por Testear</NavDropdown.Item>
             <NavDropdown.Item >Completada</NavDropdown.Item>
           </NavDropdown>
@@ -63,7 +66,7 @@ const NavBar =() => {
   </Navbar>
 
   <ModalAgregarTarea showModal={showModal} handleClose={handleCloseModal} createTask={createTask}/>
-
+  
   </>
 );
 }
