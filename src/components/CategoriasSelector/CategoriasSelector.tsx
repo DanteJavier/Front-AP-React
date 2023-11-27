@@ -8,7 +8,7 @@ interface CategoriasSelectorProps {
 const CategoriasSelector: React.FC<CategoriasSelectorProps> = ({onSelectedCategory}) => {
   const categorias = [
     {nombre:'PorHacer', icono:<BsCheck/>},
-    {nombre:'EnProducción', icono:<BsGear/>},
+    {nombre:'EnProduccion', icono:<BsGear/>},
     {nombre:'PorTestear', icono:<BsPencilSquare/>},
     {nombre:'Completada', icono:<BsBookmarkCheck/>},
   ];

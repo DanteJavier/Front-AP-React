@@ -49,12 +49,12 @@ const NavBar =() => {
           style={{ maxHeight: '100px' }}
           navbarScroll
         >
-          <Nav.Link href="#">Inicio</Nav.Link>
+          <Nav.Link href="/">Inicio</Nav.Link>
           <NavDropdown title="Tareas" id="navbarScrollingDropdown">
-            <NavDropdown.Item href="#action3">Por Hacer</NavDropdown.Item>
-            <NavDropdown.Item href="#action4">En Produccion</NavDropdown.Item>
-            <NavDropdown.Item href="#action5">Por Testear</NavDropdown.Item>
-            <NavDropdown.Item href="#action6">Completada</NavDropdown.Item>
+            <NavDropdown.Item >Por Hacer</NavDropdown.Item>
+            <NavDropdown.Item >En Produccion</NavDropdown.Item>
+            <NavDropdown.Item >Por Testear</NavDropdown.Item>
+            <NavDropdown.Item >Completada</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link onClick={handleShowModal}>Nueva Tarea</Nav.Link>
         </Nav>

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 
  const CategoriasTareas = ({tasks}:{tasks:Task[]}) => {
-  const categorias = ['PorHacer', 'EnProducción', 'PorTestear', 'Completada'];
+  const categorias = ['PorHacer', 'EnProduccion', 'PorTestear', 'Completada'];
 
   return (
     <section className="conteiner-fluid mt-5" id="categorias">

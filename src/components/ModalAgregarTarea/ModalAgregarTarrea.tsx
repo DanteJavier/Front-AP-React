@@ -131,7 +131,8 @@ const ModalAgregarTarea: React.FC<ModalAgregarTareaProps> = ({showModal, handleC
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         value={formik.values.estado}>
-
+                            
+                        <option value="">Selecciona un estado</option>
                         <option value="PorHacer">Por hacer</option>
                         <option value="EnProduccion">En producción</option>
                         <option value="PorTestear">Por testear</option>
