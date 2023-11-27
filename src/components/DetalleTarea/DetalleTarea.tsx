@@ -105,7 +105,7 @@ const DetalleTarea = () => {
               <option value="">Selecciona un estado</option>
               <option value="PorHacer">Por Hacer</option>
               <option value="EnProduccion">En Producción</option>
-              <option value="PorrTestear">Por Testear</option>
+              <option value="PorTestear">Por Testear</option>
               <option value="Completada">Completada</option>
             </select>
             <button className="btn btn-primary mx-1" onClick={handleUpdateTask}>Actualizar Estado</button>
